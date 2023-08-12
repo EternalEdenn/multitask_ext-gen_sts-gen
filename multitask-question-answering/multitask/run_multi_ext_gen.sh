@@ -1,0 +1,12 @@
+python run_multi_ext_gen.py \
+--train_file_path ./data/train_data_ext_gen_mt5.pt \
+--valid_file_path ./data/valid_data_ext_gen_mt5.pt \
+--output_dir ./output_mt5_trained_ext_gen/ \
+--do_train True \
+--do_eval True \
+--load_best_model_at_end True \
+--remove_unused_columns False \
+--evaluation_strategy steps \
+--num_train_epochs 40 \
+--per_device_train_batch_size 16 \
+--per_device_eval_batch_size 16
