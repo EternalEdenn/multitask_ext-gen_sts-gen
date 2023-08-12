@@ -14,5 +14,5 @@ Python: 3.7.8
 PyTorch: 1.12.1+cu113 
 GPU: A6000
 ```
-You can download PyTorch corresponding to your CUDA version. [CUDA-PyTorch](https://pytorch.org/get-started/previous-versions/)
+You can download PyTorch corresponding to your CUDA version refer to [CUDA-PyTorch](https://pytorch.org/get-started/previous-versions/).
 ## Run the code
