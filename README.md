@@ -1,4 +1,4 @@
-# Multitask for Generative&amp;Extractive and Generative&amp;Semantic-Similarity
+# MultiTask for Generative&amp;Extractive and Generative&amp;Semantic-Similarity
 
 ## There are three tasks included:
 - singletask: train with only Generative dataset
@@ -32,3 +32,4 @@ protoc --version    # verify the version
 # or you can directly use pip install:
 pip install protobuf==3.20.0rc1
 ```
+### SingleTask
