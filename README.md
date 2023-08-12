@@ -11,5 +11,5 @@ We do this research by the setting as below:
 ```
 Python: 3.7.8
 PyTorch: 1.12.1+cu113 
-git commit
+GPU: A6000
 ```
