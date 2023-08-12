@@ -35,4 +35,9 @@ pip install protobuf==3.20.0rc1
 ### SingleTask
 ```
 cd multitask-question-answering/singletask
+nohup sh exe_seq2seq_qa_train_tamura.sh > singletask_T5.txt &
+sh exe_seq2seq_qa_predict_tamura.sh
+sh rouge.sh
+```
+### MultiTask
 
