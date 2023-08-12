@@ -35,9 +35,12 @@ pip install protobuf==3.20.0rc1
 ### SingleTask
 ```
 cd multitask-question-answering/singletask
-nohup sh exe_seq2seq_qa_train_tamura.sh > singletask_T5.txt &
-sh exe_seq2seq_qa_predict_tamura.sh
+nohup sh exe_seq2seq_qa_train_tamura.sh > singletask_T5.txt &   # train the model
+sh exe_seq2seq_qa_predict_tamura.sh                             # do the inference
 sh rouge.sh
 ```
 ### MultiTask
-
+```
+cd multitask-question-answering/singletask
+nohup sh exe_seq2seq_qa_train_tamura.sh > singletask_T5.txt &   # train the model
+```
