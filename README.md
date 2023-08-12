@@ -35,12 +35,21 @@ pip install protobuf==3.20.0rc1
 ### SingleTask
 ```
 cd multitask-question-answering/singletask
-nohup sh exe_seq2seq_qa_train_tamura.sh > singletask_T5.txt &   # train the model
-sh exe_seq2seq_qa_predict_tamura.sh                             # do the inference
+sh exe_seq2seq_qa_train_tamura.sh             # train the model
+sh exe_seq2seq_qa_predict_tamura.sh           # do the inference
 sh rouge.sh
 ```
 ### MultiTask
 ```
+# Training
 cd multitask-question-answering/singletask
-nohup sh exe_seq2seq_qa_train_tamura.sh > singletask_T5.txt &   # train the model
+sh run_multi_ext_gen.sh                       # train the model with Generative dataset and Extractive dataset
+sh run_multi_sts_gen.sh                       # train with Generative dataset with inter-sentence Semantic Similarity
+# (You can change weights of MNRL and Cross Entry Loss of mT5)
+=======================================================================================================================
+# Prediction
+sh predict_multitask.sh                       # do the reference
+sh rouge.sh
+sh rougeL_significance-test.sh                # use Welch t-test to judge the significant difference
+
 ```
