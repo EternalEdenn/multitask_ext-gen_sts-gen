@@ -34,4 +34,5 @@ pip install protobuf==3.20.0rc1
 ```
 ### SingleTask
 ```
-cd multitask-question-answering/
+cd multitask-question-answering/singletask
+
