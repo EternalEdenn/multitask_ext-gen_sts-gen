@@ -16,3 +16,19 @@ GPU: A6000
 ```
 You can download PyTorch corresponding to your CUDA version refer to [CUDA-PyTorch](https://pytorch.org/get-started/previous-versions/).
 ## Run the code
+First of all, huggingface-transformers should be downloaded.
+```
+git clone https://github.com/huggingface/transformers.git
+cd transformers
+pip install -e .
+```
+Secondly, we should download protobuf.
+```
+git clone https://github.com/protocolbuffers/protobuf.git
+cd protobuf/python/
+python setup.py install --cpp_implementation
+protoc --version    # verify the version
+========================================================
+# or you can directly use pip install:
+pip install protobuf==3.20.0rc1
+```
