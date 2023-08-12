@@ -51,5 +51,4 @@ sh run_multi_sts_gen.sh                       # train with Generative dataset wi
 sh predict_multitask.sh                       # do the reference
 sh rouge.sh
 sh rougeL_significance-test.sh                # use Welch t-test to judge the significant difference
-
 ```
