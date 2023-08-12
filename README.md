@@ -14,3 +14,5 @@ Python: 3.7.8
 PyTorch: 1.12.1+cu113 
 GPU: A6000
 ```
+
+## Run the code
