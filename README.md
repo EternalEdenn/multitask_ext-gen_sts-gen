@@ -32,6 +32,11 @@ protoc --version    # verify the version
 # or you can directly use pip install:
 pip install protobuf==3.20.0rc1
 ```
+### Data unzip
+```
+cd multitask-question-answering/multitask/data
+tar xzvf filename.tar
+```
 ### SingleTask
 ```
 cd multitask-question-answering/singletask
@@ -42,7 +47,7 @@ sh rouge.sh
 ### MultiTask
 ```
 # Training
-cd multitask-question-answering/singletask
+cd multitask-question-answering/multitask
 sh run_multi_ext_gen.sh                       # train the model with Generative dataset and Extractive dataset
 sh run_multi_sts_gen.sh                       # train with Generative dataset with inter-sentence Semantic Similarity
 # (You can change weights of MNRL and Cross Entry Loss of mT5)
